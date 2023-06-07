@@ -1,0 +1,177 @@
+.header {
+  width: 100%;
+  position: absolute;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1320px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navlink {
+  display: block;
+  color: #474747;
+  text-decoration: none;
+  padding: 29px 15px;
+}
+
+.is_dark .navlink {
+  color: #fff;
+}
+
+.navlink_active {
+  font-weight: bold;
+  border-bottom: 2px solid #782dd4;
+}
+
+.is_dark .navlink_active {
+  border-color: #fff;
+}
+
+.navlink:hover {
+  font-weight: bold;
+  color: #474747;
+}
+
+.is_dark .navlink:hover {
+  color: #fff;
+}
+
+.language_btn {
+  background: none;
+  border: none;
+  margin-left: 10px;
+}
+
+.active_lang {
+  position: relative;
+}
+
+.active_lang::after {
+  position: absolute;
+  bottom: -15px;
+  right: 45%;
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #782dd4;
+}
+
+.is_dark .active_lang::after {
+  background-color: #fff;
+}
+
+.menu_button {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu_button {
+    box-sizing: border-box;
+    padding: 0px;
+    display: block;
+    order: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-top: 5px solid #474747;
+    width: 35px;
+  }
+
+  .is_dark .menu_button {
+    border-top-color: #fff;
+  }
+
+  .menu_button::after,
+  .menu_button::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #474747;
+    margin-top: 5px;
+    transition: 0.4s;
+    position: relative;
+  }
+
+  .is_dark .menu_button::after,
+  .is_dark .menu_button::before {
+    background-color: #fff;
+  }
+
+  .active .menu_button {
+    border-top-color: transparent;
+  }
+
+  .active .menu_button::after {
+    transform: rotate(-135deg);
+    width: 35px;
+    top: -10px;
+  }
+
+  .active .menu_button::before {
+    transform: rotate(135deg);
+    width: 35px;
+  }
+
+  .menu_button::before {
+    width: 25px;
+  }
+
+  .menu_button::after {
+    width: 15px;
+  }
+
+  .logo {
+    padding: 25px 0;
+    order: 1;
+  }
+
+  .ul {
+    display: block;
+    position: absolute;
+    width: 0;
+    transition: 0.6s;
+    top: 84px;
+    left: 0;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: calc(100vh - 84px);
+    visibility: hidden;
+    overflow-x: hidden;
+  }
+
+  .is_dark .ul {
+    background: #000;
+  }
+
+  .language {
+    display: none;
+  }
+
+  .nav.active .ul {
+    width: 80%;
+    visibility: visible;
+  }
+
+  .navlink {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    margin: 0 20px;
+  }
+}

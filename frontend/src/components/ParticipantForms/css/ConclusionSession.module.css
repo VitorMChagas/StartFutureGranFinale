@@ -1,0 +1,162 @@
+.container_conclusion {
+    background: no-repeat bottom url('../../../assets/images/participationforms-conclusion-footer.png');
+    background-size: contain;
+}
+
+.container_grid {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+  
+div.conclusion_text {
+    display: grid;
+    width: 50%;
+}
+
+.conclusion_text h1 {
+    font-size: 42px;
+    color: #FFF;
+    max-width: 90%;
+    line-height: inherit;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.conclusion_text strong {
+    font-weight: bold;
+    color: #782DD4;
+}
+
+.conclusion_text h2 {
+    font-size: 24px;
+    color: #FFF;
+}
+
+.social_media {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+  
+.social_media a {
+    margin-left: -15px;
+}
+
+.social_media img {
+    width: 90px;
+    height: 90px;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+}
+
+.video iframe {
+    display: block;
+    height: 400px;
+    width: calc(400px * 1.77);
+}
+
+.video::before,
+.video::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.video::after {
+    top: -10px;
+    left: -10px;
+    border-top: 1px solid #782dd4;
+    border-left: 1px solid #782dd4;
+}
+
+.video::before {
+    bottom: -10px;
+    right: -10px;
+    border-bottom: 1px solid #782dd4;
+    border-right: 1px solid #782dd4;
+}
+
+.home_button {
+    width: 200px;
+    background-color: #782DD4;
+    color: white;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+}
+
+.back_home {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {  
+    .video {
+        display: none;
+    }
+
+    .container_conclusion {
+        background-size: auto;
+    }
+
+    div.conclusion_text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    div.conclusion_text {
+        margin-top: 15vh;
+    }
+    
+    .conclusion_text h1 {
+        font-size: 24px;
+    }
+
+    .conclusion_text h2 {
+        font-size: 18px;
+    }
+
+    .container_grid {
+        align-items: start;
+        height: 85vh;
+    }
+
+    .back_home {
+        display: flex;
+        align-items: center;
+        height: 12vh;
+        padding: 0 20px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .back_home button {
+        width: 100%;
+        background-color: #782DD4;
+        color: white;
+        height: 45px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .back_home a {
+        color: white;
+    }
+}
+  

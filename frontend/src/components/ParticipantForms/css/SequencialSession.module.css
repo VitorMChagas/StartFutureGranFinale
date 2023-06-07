@@ -1,0 +1,441 @@
+.container_grid {
+    display: flex;
+    align-items: start;
+    height: 100vh;
+    max-width: 1320px;
+    padding: 12vh 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.page_display {
+    height: 60vh;
+}
+
+.top_back_session_button {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: fit-content;
+}
+
+.left_arrow {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    transform: rotate(-45deg);
+    margin-right: 10px;
+}
+
+.top_back_session_button,
+.back_session_button {
+    border: none;
+    background: none;
+    color: #FFF;
+    font-size: 16px;
+    min-width: 200px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.top_back_session_button:hover,
+.back_session_button:hover {
+    text-decoration: underline;
+}
+
+.next_session_button {
+    width: 200px;
+    color: white;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+}
+
+.next_session_button:hover {
+    background-color: rgba(120, 45, 212, 0.7);
+}
+
+.session_buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.session_title div {
+    max-width: 70%;
+}
+
+.session_title h1 {
+    font-size: 32px;
+    color: #FFF;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.session_title strong {
+    font-weight: bold;
+    color: #782DD4;
+}
+
+div.progress_line {
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+hr.progress_line,
+hr.progress_line_active {
+    height: 4px;
+    width: 19%;
+    opacity: 1;
+    margin-bottom: 50px;
+}
+
+hr.progress_line {
+    background-color: #262626;
+}
+
+hr.progress_line_active {
+    background-color: #782DD4;
+}
+
+.block_text h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #FFF;
+}
+
+.block_text label {
+    font-size: 15px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.block_text select,
+.block_text input {
+    border-radius: 7px;
+    background-color: #424242;
+    color: #FFF;
+    padding: 15px;
+    font-size: 16px;
+    width: 50%;
+    border: none;
+}
+
+.block_text select {
+    border-right: 15px solid transparent;
+}
+
+.tech_knowledge_container {
+    display: flex;
+    justify-items: start;
+    width: 100px;
+    margin-bottom: 5%;
+}
+
+.tech_knowledge {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.tech_knowledge button {
+    margin-right: 35%;
+}
+
+.wished_tech_text textarea,
+.tech_knowledge_text_area textarea {
+    border-radius: 7px;
+    background-color: #424242;
+    color: #FFF;
+    padding: 20px;
+    margin: 0px 0px 15px;
+    font-size: 16px;
+    width: 60%;
+    height: 15vh;
+    border: none;
+}
+
+.wished_tech_text {
+    width: 60%;
+}
+
+.wished_tech_text input {
+    width: 70%;
+}
+
+.wished_tech_label {  
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    height: fit-content;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wished_tech_option {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0080A8;
+    height: fit-content;
+}
+
+.wished_tech_option label {
+    color: #FFF;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.wished_tech_button button {
+    background: none;
+    border: 2px solid #FFF;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 10px 0px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.study_tools_container {
+    display: flex;
+    justify-content: start;
+    margin: 30px 0px;
+}
+
+.study_tool_card {
+    background-color: #1F1F1F;
+    color: #FFF;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 250px;
+    height: 250px;
+    margin-right: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.study_tool_card img {
+    margin-top: 5%;
+    max-height: 85px;
+}
+
+.study_tool_card label {
+    font-size: 18px;
+    margin: 0px;
+}
+
+.tech_knowledge button,
+.study_tool_card button {
+    background: none;
+    border: none;
+    height: 25px;
+    margin-top: -15%;
+}
+
+.study_tool_card_label_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.study_tool_card_label_mobile label {
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.study_tool_card_label_mobile button {
+    margin: 0px;
+}
+
+.radio_button,
+.radio_button_active {
+    border-radius: 50%;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20%;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.radio_button {
+    background: none;
+}
+.radio_button_active {
+    background: #782DD4 content-box;
+}
+
+.work_link {
+    margin-top: 70px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 32vh;
+}
+
+.work_link div {
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+    margin-bottom: 20px;
+}
+
+.work_link button,
+.work_link_remove_btn {
+    background: none;
+    border: 2px solid #782DD4;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.work_link_remove_btn {
+    border: none !important;
+    font-size: 20px !important;
+}
+
+@media screen and (max-width: 1360px) {
+    div.progress_line {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .top_back_session_button,
+    div.progress_line {
+        display: none;
+    }
+
+    .session_title h1 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .block_text h2 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .block_text select,
+    .block_text input {
+        width: 100%;
+    }
+
+    .page_display {
+        height: 55vh;
+    }
+
+    .session_buttons {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .back_session_button,
+    .next_session_button {
+        width: 100%;
+    }
+
+    .back_session_button:hover {
+        text-decoration: none;
+    }
+
+    .next_session_button:hover {
+        background-color: #782DD4;
+    }
+
+    .tech_knowledge_container {
+        display: grid;
+        margin-bottom: 0px;
+    }
+
+    .tech_knowledge {
+        margin: 10px;
+    }
+
+    .wished_tech_text,
+    .wished_tech_text input,
+    .tech_knowledge_text_area textarea {
+        width: 100%;
+    }
+
+    .wished_tech_text {
+        display: block;
+    }
+
+    .wished_tech_label {
+        width: 100%;
+        justify-content: start;
+        word-break: break-all;
+        height: 25vh;
+    }
+
+    .study_tools_container {
+        display: block;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    
+    .study_tool_card {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 10vh;
+        margin: 20px 0px;
+        padding: 0px 15px;
+        border-radius: 10px;
+    }
+    
+    .study_tool_card img {
+        margin-top: 0px;
+        max-height: 60%;
+    }
+
+    .work_link {
+        margin-top: 20px;
+        max-height: 35vh;
+    }
+    
+    .work_link div {
+        display: block;
+        margin-left: 0px;
+        margin-bottom: 5px;
+        padding: 2px;
+    }
+
+    .work_link button,
+    .work_link_remove_btn {
+        border: 2px solid #FFF;
+        width: 100%;
+        height: 45px;
+        border-radius: 10px;
+        font-size: 16px;
+        margin: 10px 0px;
+    }
+    
+    .work_link_remove_btn {
+        width: 15% !important;
+    }
+}

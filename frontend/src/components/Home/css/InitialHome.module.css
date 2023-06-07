@@ -1,0 +1,174 @@
+.background {
+  background: url('../../../assets/images/home-shadow-background.png') no-repeat 86% 30px, #000;
+  background-size: 90vh;
+  position: relative;
+}
+
+.background_animation {
+  width: 100%;
+  position: absolute;
+}
+
+.initial_home {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.initial_home_text {
+  position: relative;
+}
+
+.cellphone {
+  position: absolute;
+  height: 130vh;
+  right: -250px;
+}
+
+.initial_home_text span{
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+
+button.initial_home_text {
+  width: 200px;
+  background-color: #782DD4;
+  color: white;
+  height: 45px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+button.initial_home_text:hover {
+  background-color: rgba(120, 45, 212, 0.7);
+}
+
+span.desc {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: white;
+  margin-top: 15px;
+  max-width: 500px;
+}
+
+.tag_1,
+.tag_2,
+.tag_3 {
+  color: #fff;
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag_1 {
+  background-color: #D44B2D;
+  bottom: -20px;
+  right: 40px;
+}
+
+.tag_2 {
+  display: none;
+}
+
+.tag_3 {
+  background-color: #782DD4;
+  right: 160px;
+  top: 41%;
+}
+
+.tag_1::before,
+.tag_2::before,
+.tag_3::before {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 25px;
+  top: -25px;
+  left: -30px;
+}
+
+.tag_1::before {
+  background-image: url('../../../assets/images/orange-arrow.svg');
+}
+
+.tag_2::before, .tag_3::before  {
+  background-image: url('../../../assets/images/purple-arrow.svg');
+}
+
+@media screen and (max-width: 1200px) {
+  .background_animation {
+    display: none;
+  }
+
+  .initial_home_text {
+    margin: 0 auto;
+  }
+
+  .tag_2 {
+    display: flex;
+    background-color: #782DD4;
+    right: 100px;
+    top: 70px;
+  }
+
+  .tag_3 {
+    display: none;
+  }
+
+  .initial_home_text span {
+    font-size: 3.5rem;
+  }
+
+  span.desc {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .initial_home {
+    height: 60vh;
+  }
+
+  .initial_home_text span {
+    font-size: 2rem;
+  }
+
+  span.desc {
+    font-size: 1rem;
+  }
+
+  .tag_1, .tag_2 {
+    font-size: .75em;
+    width: 100px;
+    height: 30px;
+  }
+
+  .tag_1::before, .tag_2::before {
+    width: 20px;
+    height: 15px;
+    top: -12px;
+    left: -15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .tag_1 {
+    bottom: -30px;
+    right: 0;
+  }
+  .tag_2 {
+    bottom: -70px;
+    right: 0;
+  }
+}

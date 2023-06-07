@@ -1,0 +1,66 @@
+.background {
+  background: linear-gradient(to top, #000 50%, #f4f5fa 50%);
+}
+
+.wrapper {
+  max-width: 1320px;
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.iframe_frame {
+  background-color: white;
+  font-size: 0.75em;
+  height: calc(100% - 40px);
+  box-shadow: 0px -6px 30px rgba(0, 0, 0, 0.15);
+  width: 44%;
+}
+
+.editor_frame {
+  background-color: #272822;
+  width: 54%;
+  overflow-y: auto;
+}
+
+.editor_frame::-webkit-scrollbar {
+  width: 10px;
+}
+
+.editor_frame::-webkit-scrollbar-track {
+  background-color: #181818;
+}
+
+.editor_frame::-webkit-scrollbar-thumb {
+  background-color: #3a3a3a;
+}
+
+.iframe_header,
+.editor_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.iframe_header > img,
+.editor_header > img {
+  height: 40px;
+  width: 40px;
+}
+
+.iframe_header > div {
+  width: 100%;
+  margin-left: 10px;
+  padding-left: 5px;
+  background-color: #f4f4f4;
+  color: #979797;
+}
+
+@media screen and (max-width: 900px) {
+  .background {
+    display: none;
+  }
+}

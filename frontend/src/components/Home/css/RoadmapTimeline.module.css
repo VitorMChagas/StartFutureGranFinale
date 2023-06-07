@@ -1,0 +1,284 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: black;
+  padding: 100px 0;
+}
+
+.content {
+  display: inline-block;
+  width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto 50px;
+}
+
+
+.swipe {
+  display: none;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.timeline {
+  margin-top: 50px;
+  width: 100%;
+  overflow: scroll hidden;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #000 60px,
+    #272727 0.1%,
+    #272727 240px,
+    #1b1b1b 0,1%,
+    #1b1b1b 420px,
+    #272727 0.1%,
+    #272727 240px
+  );
+}
+
+.timeline::-webkit-scrollbar {
+  width: 10px;
+}
+
+.timeline::-webkit-scrollbar-track {
+  background-color: #181818;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background-color: #3a3a3a;
+}
+
+.timeline .week1,
+.week2,
+.week3,
+.week4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: calc(180px * 3 + 30px);
+  width: 1px;
+  bottom: 0;
+  background-color: #484848;
+}
+
+.week1::before,
+.week2::before,
+.week3::before,
+.week4::before {
+  position: absolute;
+  top: -30px;
+  display: block;
+  width: 250px;
+  text-align: center;
+}
+.week1::before {
+  content: 'Primeira semana';
+}
+.week2::before {
+  content: 'Segunda semana';
+}
+.week3::before {
+  content: 'Terceira semana';
+}
+.week4::before {
+  content: 'Quarta semana';
+}
+
+.week1 {
+  left: calc(((100vw - 1300px) / 2) + 300px);
+}
+.week2 {
+  left: calc(((100vw - 1300px) / 2) + 315px + 380px + 15px);
+}
+.week3 {
+  left: calc(((100vw - 1300px) / 2) + 315px + 380px * 2 + 15px * 3);
+}
+.week4 {
+  left: calc(((100vw - 1300px) / 2) + 315px + 380px * 3 + 15px * 5);
+}
+
+.row_week {
+  background-color: black;
+  height: 60px;
+}
+
+.row {
+  height: 180px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.team_name {
+  width: 300px;
+  flex-shrink: 0;
+  margin-left: calc((100vw - 1300px) / 2);
+}
+
+.team_name h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.team_name h3::before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.team_name_design::before {
+  background-image: url('../../../assets/images/design-team-icon.svg');
+  background-color: #EC3B23;
+  background-size: 80%;
+}
+
+.team_name_dev::before {
+  background-image: url('../../../assets/images/dev-team-icon.svg');
+  background-color: #CE45E4;
+  background-size: 80%;
+}
+
+.team_name_manage::before {
+  background-image: url('../../../assets/images/manage-team-icon.svg');
+  background-color: #5C6DFF;
+  background-size: 60%;
+}
+
+.row:nth-child(even) {
+  background-color: #272727;
+}
+
+.row:nth-child(odd) {
+  background-color: #1b1b1b;
+}
+
+.timeline_item_1,
+.timeline_item_2 {
+  background-color: #383838;
+  display: inline-block;
+  height: 100%;
+  margin: 0 30px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  border-radius: 8px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.timeline_item_1 {
+  width: 350px;
+}
+.timeline_item_2 {
+  width: 760px;
+}
+
+.timeline_item_content {
+  flex: 1;
+}
+
+.timeline_item_content_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline_item_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timeline_item_footer_squad {
+  font-weight: bold;
+}
+
+.timeline_item_footer_images {
+  position: relative;
+}
+
+.timeline_item_footer_images img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  object-fit: cover;
+}
+
+.timeline_item_footer_images img:nth-child(2) {
+  right: 15px;
+}
+.timeline_item_footer_images img:nth-child(3) {
+  right: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+  .team_name {
+    margin-left: 0;
+  }
+  .week1 {
+    left: 300px;
+  }
+  .week2 {
+    left: calc(315px + 380px + 15px);
+  }
+  .week3 {
+    left: calc(315px + 380px * 2 + 15px * 3);
+  }
+  .week4 {
+    left: calc(315px + 380px * 3 + 15px * 5);
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .content {
+    display: flex;
+    width: 100%;
+    margin: 0 0 50px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .team_name h3 {
+    margin-left: 20px;
+  }
+
+  .swipe {
+    font-size: 1.25em;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .desc {
+    display: none;
+  }
+
+  .title {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .swipe {
+    font-size: 1em;
+  }
+}

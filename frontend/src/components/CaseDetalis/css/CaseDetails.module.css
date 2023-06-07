@@ -1,0 +1,254 @@
+.case_detais_body {
+    background-color: #F4F5FA;;
+}
+
+.link_in_text {
+  color: #0092C0;
+  text-decoration: underline;  
+}
+
+.container {
+    max-width: 1320px;
+    padding: 100px 0px 20px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container_content {
+    max-width: 1320px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container_content_index {
+    max-width: 1320px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.case_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #474747;
+}
+
+.case_subtitle {
+    color: #474747;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 80px;
+}
+
+.case_subtitle_initial {
+    color: #474747;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.case_text_bold {
+    color: #474747;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.case_img {
+    display: block;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.case_img_responsive_small {
+    width: 17%;
+}
+
+.case_text_container {
+    margin: 20px auto;
+}
+
+.case_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #474747;
+}
+
+.case_text_index {
+    font-size: 1.3rem;
+    color: black;
+    text-align: start;
+    margin: auto;
+}
+
+.case_text_index_anchor_container {
+    list-style-type: none;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.case_text_index_anchor {
+    text-decoration: none;
+    color: #0092C0;
+}
+
+.container_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_flex_start {
+    display: flex;
+    justify-content: start;
+    grid-gap: 5%;
+}
+
+.container_image {
+    width: 45%;
+}
+
+.case_img_subtitle_container {
+    text-align: right;
+    margin: 10px 1%;
+}
+
+.case_img_subtitle {
+    font-size: 0.8rem;
+    color: black;
+}
+
+.case_user_card {
+    background-color: white;
+    text-align: center;
+    width: 38%;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+.case_card_img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.case_card_text_container {
+    text-align: start;
+}
+
+.case_card_text_title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+}
+
+.case_card_text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.container_flex_card_icons {
+    display: flex;
+    justify-content: right;
+    margin-right: -2%;
+}
+
+.case_previous_page_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #A3A3A3;
+}
+
+.case_previous_page_text strong {
+    color: #782DD4
+}
+
+@media screen and (max-width: 930px) {
+    .container_content {
+        padding: 0px;
+    }
+
+    .container_content_index {
+        display: none;
+    }
+
+    .container_flex {
+        display: block;
+    }
+
+    .container_image {
+        width: 100%;
+    }
+
+    .container_flex_start {
+        display: flex;
+        justify-content: center;
+        grid-gap: 5%;
+    }
+
+    .case_previous_page_text {
+        margin: 0px 20px;
+    }
+
+    .case_title {
+        margin: 0px 20px;
+        font-size: 32px;
+    }
+    
+    .case_subtitle {
+        margin: 60px 20px 0px 20px;
+        font-size: 24px;
+    }
+    
+    .case_subtitle_initial {
+        margin: 0px 20px;
+        font-size: 24px;
+    }
+
+    .case_text_bold {
+        margin: 0px 20px;
+        font-size: 16px;
+    }
+
+    .case_text_container {
+        margin: 20px 20px;
+    }
+
+    .case_text {
+        font-size: 14px;
+    }
+
+    .case_img_responsive_big {
+        display: block;
+        margin: 10px auto;
+        width: 75%;
+    }
+
+    .case_img_responsive_small {
+        display: block;
+        width: 25%;
+    }
+
+    .case_user_card {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
