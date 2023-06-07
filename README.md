@@ -11,17 +11,17 @@
 [**Mobile** - React Native](https://github.com/VitorMChagas/StartFutureGranFinale/tree/main/mobile)
  
 Autores: 
--   Vitor Miguel das Chagas
+-   Vitor Miguel das Chagas - 
     vitormchagas@gmail.com 
      
--   Lucas Nunes de Assis
+-   Lucas Nunes de Assis -
        lucas.alemao123456@hotmail.com  
     
--   Brenda Rodrigues Doswaldo
+-   Brenda Rodrigues Doswaldo -
     brebrenda.rodrigues@hotmail.com  
     
--   RAUL SIMOES GOES
+-   Raul Simões Goes -
     raulsgoes@gmail.com  
 
--   Miguel Venditti
+-   Miguel Venditti -
     miguis.venditti@gmail.com
