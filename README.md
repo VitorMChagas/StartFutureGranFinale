@@ -4,7 +4,9 @@
 
  **Grupo MVPLR**
 [**Front-end** - React](https://github.com/VitorMChagas/StartFutureGranFinale/tree/main/frontend)
+
 [**Back-end** - Python](https://github.com/VitorMChagas/StartFutureGranFinale/tree/main/backend)
+
 [**Mobile** - React Native](https://github.com/VitorMChagas/StartFutureGranFinale/tree/main/mobile)
  
 Autores: 
